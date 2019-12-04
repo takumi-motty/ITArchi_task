@@ -5,5 +5,4 @@ package com.example.motty;
 
 interface IMyAidlInterface {
     int getResult(int val1, int val2);
-    int timeJudge(int val3);
 }

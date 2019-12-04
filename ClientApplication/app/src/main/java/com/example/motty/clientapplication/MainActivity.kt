@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             val val2 = val2_text.text.toString()
             val uri = "https://www.univcoop.or.jp/activity/wa-master/life/index.html"
             try {
-                val result = myRemoteService?.getResult(val1.toInt(), val2.toInt())
-                if(result == 1){
+                val time = myRemoteService?.getResult(val1.toInt(), val2.toInt())
+                if(time == 1){
                     judgeText.setText("いいね！毎日継続しよう！")
                 }else{
                     Toast.makeText(this, "それで修了できると思ってるの？", Toast.LENGTH_LONG).show()
